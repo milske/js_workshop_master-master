@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script src="myJavascript.js"></script>
   </head>
   <body>
     <h1>Heading 1</h1>
@@ -12,6 +13,14 @@
       alert("This is a JS command");
       var heading = document.getElementsByTagName("h1");
       heading[0].innerHTML = "TEST";
+      console.log("This is working");
+      document.write("<p> New paragraph </p>");
+      myFirstFunction();
+
+      var helloWord = (function () {
+        console.log("Hello Word");
+      })();
+      helloWorld;
     </script>
   </body>
 </html>
