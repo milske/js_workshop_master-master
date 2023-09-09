@@ -11,6 +11,102 @@
       window.alert("This is a window alert");
       document.write("This is one of the print functions");
       console.log("This is text only in the console");
+
+      var firstname = "Your firstname";
+      var lastname = "Your lastname";
+      alert(firstname);
+      document.write(lastname);
+      alert(firstname + " " + lastname);
+      console.log(lastname + ", " + firstname);
+
+      /*
+                      var x = 17;
+                      var order = "Beer";
+                      if (x > 50) {
+                        document.write("He's over 50!");
+                      } else if (x <= 50 && x > 30) {
+                        document.write(
+                          "<strong>Middle aged man, who ordered some </strong>" + order
+                        );
+                      } else if (x < 18 && x > 15) {
+                        document.write("You are way too young to be drinking");
+                        console.log("You are way too young to be drinking");
+                      } else document.write("It seems you're bit underaged.");
+                      {
+                     */
+      /*
+                  document.write("<h2>Loops</h2><ol>");
+                  var arr = [];
+                  for (var i = 0; i < 15; i++) {
+                    arr.push(Math.floor(Math.random() * 100 + 1));
+                    console.log(arr[i]);
+                    document.write("<li>" + arr[i] + "</li>");
+                  }
+                  document.write("</ol>");
+                  console.log(arr);
+
+                  function areYouOldEnough(age) {
+                    if (age < 18) {
+                      console.log("FALSE: Age is " + age);
+                      return false;
+                    } else console.log("true");
+                    return true;
+                  }
+                  console.log(areYouOldEnough(16));
+                  document.write(areYouOldEnough(19));
+                  alert(areYouOldEnough(5));
+                  */
+      var people = [
+        {
+          firstName: "John",
+          lastName: "Doe",
+          age: 50,
+          eyeColor: "blue",
+          address: "street 121",
+          phone: "343535",
+          printInfo: function () {
+            return this.firstName + " " + this.lastName;
+          },
+        },
+        {
+          firstName: "Robert",
+          lastName: "Smith",
+          age: 22,
+          eyeColor: "brown",
+          address: "street 300",
+          phone: "344566",
+          printInfo: function () {
+            return this.firstName + " " + this.lastName;
+          },
+        },
+      ];
+      var text = "<h2>Objects</h2>";
+      for (i = 0; i < people.length; i++) {
+        text += people[i].printInfo();
+      }
+      document.write(text);
+
+      function dogsAge(age) {
+        return age * 7;
+      }
+      document.write("Man's age 7 is " + dogsAge(7) + " in dog's age");
+
+      var i = 5;
+      var j = 10;
+      var k = 25;
+      var l = "Joe";
+      if (i < j) {
+        console.log("i");
+      } else if (j > k) {
+        console.log("k");
+      } else {
+        console.log("j");
+      }
+
+      var arr = [3, 5, 7];
+      for (var i = 0; i < arr.length; ++i) {
+        console.log(arr[i]);
+      }
     </script>
   </head>
 
