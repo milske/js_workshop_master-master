@@ -22,26 +22,6 @@ function showExtraFields() {
   x.style.display = "block";
 }
 
-function calculateTotalCost() {
-  var selectedType = document.getElementById("type").value;
-  var years = document.getElementById("years").value;
-
-  var membership = {
-    basic: 10.0,
-    premium: 15.0,
-    gold: 20.0,
-    platinum: 25.0,
-  };
-
-  var totalCost = membership[selectedType] * years;
-
-  if (years > 1) {
-    totalCost = totalCost * 0.8;
-  }
-
-  document.getElementById("cost").value = totalCost();
-}
-
 function calculate() {
   var quantity = parseInt(document.getElementById("quantity").value);
   var price = parseFloat(document.getElementById("price").value);
